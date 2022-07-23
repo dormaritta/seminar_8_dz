@@ -10,15 +10,6 @@
 
 int rows = 3; int columns = 4; int min = 1; int max = 10;
 
-int[,] array = new int[rows, columns];
-GetArray(array);
-Console.WriteLine("Исходный массив: ");
-PrintArray(array);
-Console.WriteLine();
-Console.WriteLine("Отсортированные по убыванию строки массива: ");
-SortArrayRows(array);
-PrintArray(array);
-
 void GetArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -61,3 +52,11 @@ void SortArrayRows(int[,] array)
     }
 }
 
+int[,] array = new int[rows, columns];
+GetArray(array);
+Console.WriteLine("Исходный массив: ");
+PrintArray(array);
+Console.WriteLine();
+Console.WriteLine("Отсортированные по убыванию строки массива: ");
+SortArrayRows(array);
+PrintArray(array);
